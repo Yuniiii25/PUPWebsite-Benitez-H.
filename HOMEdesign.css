@@ -1,0 +1,699 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: Arial;
+}
+.banner {
+
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner header {
+    width: 100%;
+    height: 2.3cm;
+    margin: 0;
+}
+header div {
+    margin: 0;
+}
+div header h1
+{
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80%;
+    color:darkred;
+    position: relative;
+    margin: 0;
+    top: 40%; 
+}
+div header h3
+{
+    font-family: 'Times New Roman';
+    margin: 0;
+    width: 50%;
+    font-size: 90%;
+    color:rgb(160, 10, 10);
+    position: relative;
+    top: 50%;
+  
+}
+.logo
+{
+    margin: 10px;
+    width: 6%;
+    height: 100%;
+    float: left;
+}
+
+
+nav {
+    width: 100%;
+    margin: 1cm 0px;
+    right: 3%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 100%;
+    position: absolute;
+    top: 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px; 
+}
+nav ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgb(197, 20, 20);
+    color: bisque;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+nav ul li a:hover {
+    background: bisque;
+    color: darkred;
+}
+
+
+.details {
+    top: 8%;
+    position: relative;
+}
+
+.details h1
+{
+    margin: 1cm 10px;
+    font-style: italic;
+    font-size: 1.5cm;
+    top: 20%;
+    font-family: initial;
+    color: darkred;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+}
+
+.details p
+{
+    margin: 0px 1cm;
+    padding-bottom: 2.3cm;
+    font-size: medium;
+    text-align: justify;
+    left: 3%;
+    width: 30%;
+    height: 50%;
+    top: 45%;
+    color: darkred;
+    text-indent: 20px;
+    line-height: 30px;
+    
+}
+.text
+{
+    font-size: 100%;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    font-weight: bolder;
+    color:bisque;
+    text-align: center;
+    top: 40%;
+    right: 10%;
+    text-shadow: darkred;
+}
+.apply button
+{
+    position: absolute;
+    left: 60%;
+    width: 30%;
+    right: 5px;
+    top: 60%;
+    background: none;
+    border-color: transparent;
+    border-radius: 25px;
+}
+.apply button a
+{
+    text-decoration: none;
+    font-size: x-large;
+    padding: 4% 10%;
+    text-transform: capitalize;
+    color: bisque;
+    font-weight: bold;
+    background-color: firebrick;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 25px;
+    transition: .3s;
+}
+.apply button a:hover
+{
+    background-color: bisque;
+    color: darkred;
+}
+
+
+.section1
+{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 90%;
+    margin-top: 0;
+    background-color: rgb(255, 250, 208);
+}
+
+.section1 h1 {
+    position: relative;
+    padding-top: 1cm;
+    left: 1.5cm;
+    width: fit-content;
+    color: darkred;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.details2 {
+    width: 100%;
+    display: flex;
+    flex: 1;
+
+}
+.section1 p {
+    width: 55%;
+    padding-right: 1cm;
+    position: relative;
+    padding-bottom: 1cm;
+    left: 1.5cm;
+    color: darkred;
+    text-indent: 1cm;
+    top: .1cm;
+    text-align: justify;
+    line-height: .9cm;
+    font-size: larger;
+}
+
+aside {
+    width: 100%;
+    padding-left: 2cm;
+    padding-right: 1cm;
+    height: 13cm;
+    position: relative;
+}
+
+
+.navbar2 h1 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    top: 10px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.navbar2 ul li {
+    list-style: none;
+    width: 90%;
+    margin: 20% 2%;
+    top: 5vh; 
+    text-align: center;
+    border-radius: 10px;
+    border-color: darkred;
+    background-color: rgb(255, 212, 72);
+}
+
+.navbar2 ul li a {
+    padding: 3vh 7vw; 
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 3vh; 
+    border-style: solid;
+    border-radius: 2.5vw; 
+    border-color: rgb(255, 212, 72);
+    background-color: darkred;
+    color: rgb(255, 255, 198);
+    transition: .5s;
+}
+
+.navbar2 ul li a:hover {
+    border-color: darkred;
+    background-color: rgb(255, 212, 72);
+    color: darkred;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1cm;
+    padding-top: 3.1cm;
+}
+
+@media only screen and (max-width: 768px) {
+    .pic1 {
+        margin: 0;
+        width: 100%;
+        padding: 0.7cm;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pic1 {
+        padding: 0.2cm;
+    }
+}
+
+.logo2 {
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    width: 25%;
+}
+
+
+
+.section2
+{
+    width: auto;
+    padding: 2cm;
+    height: fit-content;
+    position: relative;
+    color: rgb(255, 255, 198);
+    background-image: url(Bg2.jpg);
+     
+}
+.section2 h1{
+    font-size: xx-large;
+    font-family: arial;
+    margin-left: 1.3cm;
+    padding-top: 1cm;
+    text-transform: uppercase;
+}
+.section2 ul{
+    font-family: arial;
+    font-size: large;
+    width: 100%;
+    padding: 1cm;
+    margin: 10px;
+    margin-left: 1.5cm;
+}
+.section2 ul li {
+    font-weight: bolder;
+    font-size: larger;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.section2 ul li p {
+    font-weight: lighter;
+    font-size: large;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    position: absolute;
+    text-align: justify;
+
+}
+.pic2 {
+    width: 70%;
+    height: 80%;
+    left: 21%;
+    position: relative;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+}
+.container {
+    width: 55%;
+    height: fit-content;
+}
+.map1 {
+    width: 80%;
+    height: 80%;
+    margin: .5cm;
+    margin-left: 1.5cm;
+    position: relative;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+}
+.map2 {
+    width: 80%;
+    height: 50%;
+    margin: .5cm;
+    margin-bottom: 2cm;
+    margin-left: 1.5cm;
+    position: relative;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+}
+.section2 h2 {
+   bottom: 10cm;
+   margin-left: 2cm;
+   padding-top: 1cm;
+   color: rgb(255, 255, 198);
+   font-size: xx-large;
+   font-weight: bolder;
+}
+.section2 h3 {
+    font-size: larger;
+    font-family: arial;
+    margin-left: 2cm;
+    margin-top: 1cm;
+}
+.section2 h3 a {
+   color: rgb(255, 213, 213);
+}
+.section2 h3 a:hover {
+    color: rgb(255, 212, 72);
+}
+.section2 article {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    margin: 1cm;
+    background-color: rgb(210, 17, 17);
+    border-radius: 20px;
+}
+.section2 article h1 {
+    margin: 1cm;
+    position: relative;
+    color:rgb(255, 255, 198);
+    font-size: xx-large;
+    
+}
+
+.details1 {
+    text-align: center;
+    margin: 20px 20px; 
+}
+.section2 article div a {
+    font-family: arial;
+    font-size: x-large;
+    color:rgb(255, 255, 198);
+    font-weight: bolder;
+    text-align: left;
+}
+.section2 article div a:hover {
+    color:rgb(255, 212, 72);
+}
+.article1 {
+    margin: .5cm;
+    width: 90%;
+    height: 40%;
+    position: relative;
+    border-radius: 20px;
+}
+.article2 {
+    margin: 1cm;
+    width: 70%;
+    height: 60%;
+    position: relative;
+    bottom: cm;
+    border-radius: 20px;   
+}
+.button {
+    position: relative;
+    display: flex;
+    margin: 1.5cm auto; 
+    margin-bottom: 0;
+    padding-bottom: 1cm;
+    width: fit-content;
+    list-style: none;
+    height: fit-content;
+    font-family: Arial, sans-serif;
+    border-radius: 50px;
+    border-width: 5px;
+  }
+
+.button a {
+  font-size: xx-large;
+  text-decoration: none;
+  background-color: transparent;
+  color:rgb(255, 250, 208);
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 21px 40px;
+  border-style: solid;
+  color: rgb(255, 212, 72);
+  border-radius: 50px;
+  transition: .5s;
+}
+.button a:hover {
+  background-color: rgb(255, 255, 198);
+  width: 100%;
+  color:darkred;
+}
+  
+
+
+footer
+{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(129, 6, 6);
+    margin: 0;
+    font-family: 'Times New Roman';
+    border-radius: 20px;
+    border-style: dashed;
+    border-color: rgb(255, 212, 72);
+}
+.container2 {
+    width: 50%;
+}
+footer h1 {
+    color:rgb(255, 255, 198);
+    position: relative;
+    top: 1cm;
+    font-family: 'times new roman';
+    padding: 1cm;
+    margin-bottom: 1.3cm;;
+    margin-right: 0;
+}
+footer h2 {
+    color:rgb(255, 255, 198);
+    position: relative;
+    justify-content: left;
+    font-family: 'times new roman';
+    left: 3cm;
+    font-weight: normal;
+    display: flex;
+}
+
+.references {
+    position: relative;
+    padding: .5cm;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.references li a {
+    font-size: X-large; 
+    font-family: 'times new roman';
+}
+
+footer ul {
+    margin-left: 3.5cm;
+    color:rgb(255, 255, 198);
+}
+footer ul li {
+    margin: 10px;
+}
+footer ul li a {
+    color:rgb(255, 255, 198);
+    font-size: x-large;
+    font-weight: bolder;
+}
+footer ul li a:hover {
+    color:rgb(255, 212, 72);
+}
+footer h5 {
+    color: rgb(255, 255, 198);
+    font-family: 'Times New Roman';
+    font-size: large;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 1em;
+        font-size: 2vw;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+}
+
+/*RESPONSIVE FOR PHONE*/
+@media only screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+    .banner {
+        height: 100vh;
+        background-image: url(BgCP.png);
+        text-align: center;
+    }
+    .banner header {
+        width: 100%;
+        height: 3cm;
+        margin: 0;
+        background-color: rgb(255, 255, 198);
+    }
+    header div {
+        margin: 0px;
+    }
+    div header h1
+    {
+        width: 100%;
+        text-align: left;
+    }
+    div header h3
+    {
+        width: 100%;
+        text-align: left;
+    }
+    .logo
+    {
+        width: 15%;
+    }
+    
+    
+    nav {
+        width: 35%;
+        margin: 1cm 0px;
+        right: 30%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+    }
+    nav ul li {
+        margin: .5cm 10px; 
+    }
+    .details {
+        display: none;
+    }
+    .text
+    {
+        top: 40%;
+        width: 80%;
+    }
+    .apply button
+    {
+        position: absolute;
+        left: 28%;
+        width: 50%;
+        right: 0;
+        top: 93%;
+        background: none;
+        border-color: transparent;
+        border-radius: 25px;
+    }
+    .apply button a
+    {
+        text-decoration: none;
+        font-size: x-large;
+        padding: 4% 10%;
+        text-transform: capitalize;
+        color: bisque;
+        font-weight: bold;
+        background-color: firebrick;
+        border-style: solid;
+        border-color: bisque;
+        border-radius: 25px;
+        transition: .3s;
+    }
+    .apply button a:hover
+    {
+        background-color: bisque;
+        color: darkred;
+    }
+    .details2 {
+        flex-direction: column;
+    }
+    .section1, .section2 {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+    }
+    aside {
+        width: 90%;
+        padding: 0;
+    }
+    .navbar2 {
+        left: 0;
+    }
+    .navbar2 ul li {
+        margin: 10%;
+    }
+    .section1 p {
+        width: 80%;
+        padding-right: 0;
+        padding-bottom: 1cm;
+        left: 1.5cm;
+        font-size: large;
+    }
+    .pic1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 87%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 1cm;
+        padding-top: 3.1cm;
+    }
+    .logo2 {
+        top: 50px;
+    }
+    .section2 ul{
+        width: 80%;
+        padding: 0;
+        margin: 10px;
+        margin-left: 10%;
+    }
+    .pic2 {
+        width: 70%;
+        height: 50%;
+        left: 15%;
+    }
+    .container {
+        width: 90%;
+        height: fit-content;
+    }
+    .details2 article {
+        width: 80%;
+        left: 5%;
+    }
+      
+}

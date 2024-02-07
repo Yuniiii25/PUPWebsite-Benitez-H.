@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>
+  <title>PUP Website</title>
+   <style>
+          * {
+            margin-top: 0;
+            padding: 0;
+            font-family: Arial;
+          }
+          body{
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: Arial;
+          }
+          .banner {
+            margin: 0%;
+            width: 100%;
+            height: fit-content;
+            background-size: cover;
+            background-position: center;
+          }
+         .banner header {
+            width: 100%;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            height: 2.3cm;
+            padding-bottom: 20px;
+            background-color: darkred;
+            margin: 0;
+          }
+          div header h1
+          {
+            width: 50%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80%;
+            color:rgb(255, 212, 72);
+            position: relative;
+            margin: 0;
+            top: 40%; 
+          }
+           div header h3
+          {
+            font-family: 'Times New Roman';
+            margin: 0;
+            width: 50%;
+            font-size: 90%;
+            color:rgb(255, 212, 72);
+            position: relative;
+            top: 50%;
+          }
+          .logo
+          {
+            margin: 10px;
+            margin-left: 30px;
+            width: 6%;
+            height: 100%;
+            float: left;
+          }
+
+
+          nav {
+            width: 100%;
+            margin: 1cm 0px;
+            right: 3%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 100%;
+            position: absolute;
+            top: 0;
+          }
+          nav ul {
+            margin: 0;
+            padding: 0;
+          }
+          nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px; 
+          }
+          nav ul li a {
+            font-weight: bolder;
+            text-decoration: none;
+            background-color: rgb(197, 20, 20);
+            color: bisque;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 25px;
+            transition-duration: 0.5s;
+          }
+          nav ul li a:hover {
+            background: bisque;
+            color: darkred;
+          }
+
+         .details {
+            position: relative;
+            display: flex;
+            left: 10%;
+            margin: 2cm 0px;
+            font-size: x-large;
+            right: 10%;
+            flex-direction: column;
+            color: darkred;
+            width: 80%;
+            font-family: Arial, sans-serif; 
+            line-height: 1.5; 
+          }
+
+        .details h1 {
+          font-family: "times new roman";
+        }
+
+        .details p {
+          font-family: arial;
+          font-size: large;
+          margin: 1cm;
+          text-align: justify;
+          text-indent: 1cm;;
+          font-weight: lighter;
+          position: relative;
+        }
+        #articles {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .heading {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .heading h3 {
+          color: darkred;
+          font-size: 2.4rem;
+          font-weight: bolder;
+        }
+        .container {
+          display: flex;
+          width: 80%;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0px;
+          flex-wrap: wrap;
+        }
+        .box {
+          width: 100%;
+          background-color: brown;
+          margin: 20px;
+        }
+        .img1 {
+          width: 100%;
+          height: auto;
+        }
+        .img1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .text1 {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+        }
+        .text1 span {
+          color: darkred;
+          font-size: 0.9rem;
+        }
+        .text1 .title1 {
+          font-size: 1.3rem;
+          font-weight:bold;
+          color:rgb(129, 6, 6);
+          text-decoration: none; 
+        }
+        .text1 .title1:hover {
+          color:rgb(231, 69, 69);
+          transition: all ease 0.3s;
+        }
+        .text1 p {
+          color:rgb(129, 6, 6);
+          font-size: large;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 20px 0px;
+        }
+        .text1 a {
+          font-size: small;
+          color: brown;
+        }
+        .text1 a:hover {
+          color:rgb(231, 69, 69);
+          transition: all ease 0.3s;
+        }
+
+       .button {
+            position: relative;
+            display: flex;
+            margin: 1.5cm auto; 
+            width: fit-content;
+            list-style: none;
+            height: fit-content;
+            font-family: Arial, sans-serif;
+            border-radius: 50px;
+            border-width: 5px;
+          }
+
+        .button a {
+          font-size: xx-large;
+          text-decoration: none;
+          background-color: transparent;
+          color:brown;
+          font-weight: bolder;
+          cursor: pointer;
+          padding: 21px 40px;
+          border-style: solid;
+          color: brown;
+          border-radius: 50px;
+          transition: .5s;
+        }
+        .button a:hover {
+          background-color: brown;
+          width: 100%;
+          color:rgb(255, 212, 72);
+        }
+        .details2 {
+          width: 100%;
+          display: flex;
+          flex: 1;
+        }
+        footer
+        {
+          width: 100%;
+          height: fit-content;
+          background-color: rgb(129, 6, 6);
+          margin: 0;
+          font-family: 'Times New Roman';
+          border-radius: 20px;
+          border-style: dashed;
+          border-color: rgb(255, 212, 72);
+        }
+        .container2 {
+          width: 50%;
+        }
+        footer h1 {
+          color:rgb(255, 255, 198);
+          position: relative;
+          top: 1cm;
+          font-family: 'times new roman';
+          padding: 1cm;
+          margin-bottom: 1.3cm;;
+          margin-right: 0;
+        }
+        footer h2 {
+          color:rgb(255, 255, 198);
+          position: relative;
+          justify-content: left;
+          font-family: 'times new roman';
+          left: 3cm;
+          font-weight: normal;
+          display: flex;
+        }
+
+        .references {
+          position: relative;
+          padding: .5cm;
+          padding-bottom: 10px;
+          font-weight: lighter;
+        }
+        .references li a {
+          font-size: X-large; 
+          font-family: 'times new roman';
+        }
+
+        footer ul {
+          margin-left: 3.5cm;
+          color:rgb(255, 255, 198);
+        }
+        footer ul li {
+          margin: 10px;
+        }
+        footer ul li a {
+          color:rgb(255, 255, 198);
+          font-size: x-large;
+          font-weight: bolder;
+        }
+        footer ul li a:hover {
+          color:rgb(255, 212, 72);
+        }
+        footer h5 {
+          color: rgb(255, 255, 198);
+          font-family: 'Times New Roman';
+          font-size: large;
+          position: relative;
+          padding-top: 10%;
+          padding-bottom: 0;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 426px) 
+        {
+            body {
+              margin: 0;
+              width: 100%;
+              padding: 100%;
+            }
+            .banner {
+              padding: 100%;
+            }
+            header {
+              font-size: x-small;
+            }
+            .navbar1 ul li a {
+              display: none;
+              top: 10%;
+            }
+        }
+     
+      </style>
+
+ </head>
+
+<body>
+
+  <div class="banner">
+      <header>
+         <div><img src="PUPLogo1.png" class="logo"></div>
+         <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+         <h3>QUEZON CITY BRANCH</h3>
+
+        <nav>
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="academic.html">ACADEMIC</a></li>
+             <li><a href="contacts.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+     </header>
+
+      <div class="details">
+        <section id="articles">
+          <div class="heading">
+            <h3>LATEST UPDATES</h3>
+  
+          </div>
+  
+          <div class="container">
+  
+            <div class="box">
+               <div class="img1">
+                <img src="img1.jpg" alt="Article">
+               </div>
+            </div>
+  
+           <div class="text1">
+              <span>February 1, 2024</span>
+              <a href="https://m.facebook.com/story.php?story_fbid=pfbid08NXiXmJHa5wsWxKsRCbP4DCTLJXuSPsxHzHzpj3n6UvSABQUaBxC5Yf2FbTQaXuxl&id=100083921003151&mibextid=Nif5oz" class="title1">Multimedia Film Festival Parade and Showing in PUPQC</a>
+              <p>We are inviting everyone to watch and join the BSIT students as they open the IT WEEK starting today, February 1, 2024 until February 8, 2024. 
+                The 2nd Multimedia Film Festival will also take place this Feb. 1, and on Friday, Feb. 2, at the Audio Visual Room (AVR). 
+                MMFF Day 1:  “THEY SEE”, “LIGHT'S OUT”, and “MUERTE”. 
+                MMFF Day 2: “LABYRINTH”, “SINISTER SERENADE”, and “PAROLYA”. 
+                For further details, visit the Commonwealth Information Technology Society FB Page
+                Don't hesitate to drop by and join us! #ITWeek2024 #2NDMMFF2024</p>
+              <a href="https://m.facebook.com/story.php?story_fbid=pfbid08NXiXmJHa5wsWxKsRCbP4DCTLJXuSPsxHzHzpj3n6UvSABQUaBxC5Yf2FbTQaXuxl&id=100083921003151&mibextid=Nif5oz">Read More in PUPQC official FB Page</a>
+           </div>
+  
+            <div class="box">
+              <div class="img1">
+               <img src="img2.png" alt="Article">
+              </div>
+           </div>
+  
+           <div class="text1">
+             <span>January 26, 2024</span>
+             <a href="https://m.facebook.com/story.php?story_fbid=pfbid02PLK6pwXJxmpHrk6m1pYveENieJNsUGWcuoB5bBZwFncT8ggWhqbDvkHJq9AtTHrtl&id=100083921003151&mibextid=Nif5oz" class="title1">The Film Industry has landed at the Polytechnic University of the Philippines-Quezon campus! </a>
+             <p>The Film Industry has landed at the Polytechnic University of the Philippines-Quezon campus! 
+              Last Friday, January 26, the 𝗗𝗲𝗲𝗽 𝗗𝗶𝘃𝗲: 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗙𝗶𝗹𝗺𝗶𝗻𝗴 Seminar was conducted which featured three renowned professionals from the film industry. 
+              Esteemed speakers include Ms. Rio Legaspi, a Writer, Narrative Researcher, and Production Assistant for ABS-CBN. Some of her works include the well-known teleseryes such as "Wildflower", "Araw Gabi",  "Los Bartardos", "Flordeliza", and "Be My Lady." She also works for various production companies such as APT Entertainment and Viva Communications Inc.
+              The second speaker, Mr. Gimson S. Alemania, is a Fashion Designer, Actor, Indie Director, and Filmmaker with notable works such as "Bato Bato Pik", "Inabol", and "Escort Duty”, which is a finalist for the Gawad Sining 2020 Film Fest.
+              Completing the line-up is Mr. Emmanuel Dela Cruz, an International Award-winning Writer, Senior Director, and Acting mentor, who also is the Filmmaker of award-winning and well-known films both in the local and international scene such as "My Rebound Girl", "Ang Pangarap Kong Holdap", "Kailangan Kita", "My Only U", "My First Romance", "Sarong Banggi," "Ang Tanging Ina", "Slumber Party”, and many more.
+              These three industry experts imparted their passion and knowledge to the young creatives of the university, honing and refining their skills, talents, and artistry.
+              The seminar was led by Ms. Ain Geuel Escober, the Instructor of Multimedia, Video Production, and Art Appreciation courses for Bachelor of Information Technology (BSIT) 3-1 and 3-2, Bachelor of Technology and Livelihood Education Information Communication Technology (BTLED ICT) 3-1, and Bachelor of Public Administration major in Public Financial Management (BPA-PFM) 2-1 classes.</p>
+             <a href="https://m.facebook.com/story.php?story_fbid=pfbid02PLK6pwXJxmpHrk6m1pYveENieJNsUGWcuoB5bBZwFncT8ggWhqbDvkHJq9AtTHrtl&id=100083921003151&mibextid=Nif5oz">Read More in PUPQC official FB Page</a>
+           </div>
+  
+            <div class="box">
+            <div class="img1">
+             <img src="img3.jpg" alt="Article">
+            </div>
+         </div>
+  
+         <div class="text1">
+           <span>January 25, 2024</span>
+           <a href="https://m.facebook.com/story.php?story_fbid=pfbid0W3KZHJRo62wJ3Buagdi7mAgVSyHTKGU8u5weyNTUDTJHA8HrB51LS13tBhRLG5ZNl&id=100083921003151&mibextid=Nif5oz" class="title1">"REHABILITATION/RENOVATION OF MULTI-PURPOSE BUILDING AT PUP QC"</a>
+           <p>Good news again... PUP Quezon City Isko at Iska!!!
+            With the ongoing infrastructure project "REHABILITATION/RENOVATION OF MULTI-PURPOSE BUILDING AT PUP QC", another promise delivered project from the Office of Cong. Ralph Wendel P. Tulfo, Quezon City's 2nd District Representative headed by Atty. Joren Lex A. Tan, Chief of Staff, is the construction of a 4-storey Academic Building. 
+            The visit from the DPWH Quezon City First District Engineering Office yesterday guarantees that the project will commence soon this year once the requirements are completed. 
+            Considering the state of public tertiary education, such a project is a big help for the campus with the insufficiency of classrooms. 
+            Again, our sincere gratitude for a Bago, Progresibo at Walang Korupsyon infrastructure development project inside the PUP Quezon City Campus that is responsive to the needs of the academic community!!
+            #TagumpayTayo
+            #ParaSaBayan
+            #congtulfo</p>
+           <a href="https://m.facebook.com/story.php?story_fbid=pfbid0W3KZHJRo62wJ3Buagdi7mAgVSyHTKGU8u5weyNTUDTJHA8HrB51LS13tBhRLG5ZNl&id=100083921003151&mibextid=Nif5oz">Read More in PUPQC official FB Page</a>
+         </div>
+  
+          
+          </div>
+  
+  
+        </section>
+
+      </div>  
+
+      <div class="button"><a href="index.html">Go Back to Home</a></div>
+      
+    </div>  
+    
+
+  </body>
+    
+    
+  <footer>
+
+    <div class="details2">
+         <div class="container2">
+           <h1>CONTACT US
+             <h2>Phone: <b>(+63 2) 5335-1PUP (5335-1787) or 5335-1777</b></h2>
+             <h2>Email: <b>inquire@pup.edu.ph</b></h2>
+             <h2>Facebook Pages:</h2>
+               <ul>
+                 <li><a href="https://www.facebook.com/ThePUPQCBranchOfficial">PUPQC Branch Official</a></li>
+                 <li><a href="https://www.facebook.com/groups/303222520571343">Student Services Announcements</a></li>
+               </ul>
+           </h1>
+
+         </div>
+
+         <div class="container2">
+           <h1>REFERENCES
+               <ul class="references">
+                  <li><a href="https://www.pup.edu.ph/quezoncity/">https://www.pup.edu.ph/quezoncity/</a></li>
+                  <li><a href="https://www.pup.edu.ph/about/">https://www.pup.edu.ph/about/</a></li>
+                  <li><a href="https://ph53202-pup-commonwealth-campus-in-quezon-city.contact.page/">https://ph53202-pup-commonwealth-campus-in-quezon-city.contact.page/</a></li>
+               </ul>
+
+
+           </h1>
+              
+         </div>
+
+    </div>
+ 
+
+    <h5>@ A mocked-up website of PUPQC Branch made by Hermione B. Benitez from BSIT 1-2 @
+    <br>No Copyright Intended. For Academic Purposes Only.</h5>
+
+  </footer>
+    
+    
+    
+    
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<head>
+  <title>PUP Website</title>
+   <style>
+        * {
+            margin-top: 0;
+            padding: 0;
+            font-family: Arial;
+          }
+          body{
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: Arial;
+          }
+          .banner {
+            margin: 0%;
+            width: 100%;
+            height: fit-content;
+            background-size: cover;
+            background-position: center;
+          }
+         .banner header {
+            width: 100%;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            height: 2.3cm;
+            padding-bottom: 20px;
+            background-color: darkred;
+            margin: 0;
+          }
+          div header h1
+          {
+            width: 50%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80%;
+            color:rgb(255, 212, 72);
+            position: relative;
+            margin: 0;
+            top: 40%; 
+          }
+           div header h3
+          {
+            font-family: 'Times New Roman';
+            margin: 0;
+            width: 50%;
+            font-size: 90%;
+            color:rgb(255, 212, 72);
+            position: relative;
+            top: 50%;
+          }
+          .logo
+          {
+            margin: 10px;
+            margin-left: 30px;
+            width: 6%;
+            height: 100%;
+            float: left;
+          }
+
+
+          nav {
+            width: 100%;
+            margin: 1cm 0px;
+            right: 3%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 100%;
+            position: absolute;
+            top: 0;
+          }
+          nav ul {
+            margin: 0;
+            padding: 0;
+          }
+          nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px; 
+          }
+          nav ul li a {
+            font-weight: bolder;
+            text-decoration: none;
+            background-color: rgb(197, 20, 20);
+            color: bisque;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 25px;
+            transition-duration: 0.5s;
+          }
+          nav ul li a:hover {
+            background: bisque;
+            color: darkred;
+          }
+
+
+         .details {
+            position: relative;
+            display: flex;
+            left: 10%;
+            margin: 2cm 0px;
+            font-size: x-large;
+            right: 10%;
+            flex-direction: column;
+            color: darkred;
+            width: 80%;
+            font-family: Arial, sans-serif; 
+            line-height: 1.5; 
+          }
+
+        .details h1 {
+          font-family: "times new roman";
+        }
+
+        .details p {
+          font-family: arial;
+          font-size: large;
+          margin: 1cm;
+          text-align: justify;
+          text-indent: 1cm;;
+          font-weight: lighter;
+          position: relative;
+        }
+       .button {
+            position: relative;
+            display: flex;
+            margin: 1.5cm auto; 
+            width: fit-content;
+            list-style: none;
+            height: fit-content;
+            font-family: Arial, sans-serif;
+            border-radius: 50px;
+            border-width: 5px;
+          }
+
+        .button a {
+          font-size: xx-large;
+          text-decoration: none;
+          background-color: transparent;
+          color:brown;
+          font-weight: bolder;
+          cursor: pointer;
+          padding: 21px 40px;
+          border-style: solid;
+          color: brown;
+          border-radius: 50px;
+          transition: .5s;
+        }
+        .button a:hover {
+          background-color: brown;
+          width: 100%;
+          color:rgb(255, 212, 72);
+        }
+        .details2 {
+          width: 100%;
+          display: flex;
+          flex: 1;
+        }
+        footer
+        {
+          width: 100%;
+          height: fit-content;
+          background-color: rgb(129, 6, 6);
+          margin: 0;
+          font-family: 'Times New Roman';
+          border-radius: 20px;
+          border-style: dashed;
+          border-color: rgb(255, 212, 72);
+        }
+        .container2 {
+          width: 50%;
+        }
+        footer h1 {
+          color:rgb(255, 255, 198);
+          position: relative;
+          top: 1cm;
+          font-family: 'times new roman';
+          padding: 1cm;
+          margin-bottom: 1.3cm;;
+          margin-right: 0;
+        }
+        footer h2 {
+          color:rgb(255, 255, 198);
+          position: relative;
+          justify-content: left;
+          font-family: 'times new roman';
+          left: 3cm;
+          font-weight: normal;
+          display: flex;
+        }
+
+        .references {
+          position: relative;
+          padding: .5cm;
+          padding-bottom: 10px;
+          font-weight: lighter;
+        }
+        .references li a {
+          font-size: X-large; 
+          font-family: 'times new roman';
+        }
+
+        footer ul {
+          margin-left: 3.5cm;
+          color:rgb(255, 255, 198);
+        }
+        footer ul li {
+          margin: 10px;
+        }
+        footer ul li a {
+          color:rgb(255, 255, 198);
+          font-size: x-large;
+          font-weight: bolder;
+        }
+        footer ul li a:hover {
+          color:rgb(255, 212, 72);
+        }
+        footer h5 {
+          color: rgb(255, 255, 198);
+          font-family: 'Times New Roman';
+          font-size: large;
+          position: relative;
+          padding-top: 10%;
+          padding-bottom: 0;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 426px) 
+        {
+            body {
+              margin: 0;
+              width: 100%;
+              padding: 100%;
+            }
+            .banner {
+              padding: 100%;
+            }
+            header {
+              font-size: x-small;
+            }
+            .navbar1 ul li a {
+              display: none;
+              top: 10%;
+            }
+        }
+     
+      </style>
+
+ </head>
+
+<body>
+
+  <div class="banner">
+      <header>
+         <div class="container"></div>
+         <div><img src="PUPLogo1.png" class="logo"></div>
+         <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+         <h3>QUEZON CITY BRANCH</h3>
+
+        <nav>
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="academic.html">ACADEMIC</a></li>
+             <li><a href="contacts.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="details">
+        <h1>HISTORY
+          <p>The PUP Quezon City Campus, formerly PUP Commonwealth Campus, 
+              is a 1.9-hectare forested land area and was assigned, transferred
+              and endorsed to the Polytechnic University of the Philippines as
+              ASSIGNEE by the Housing and Urban Development Coordinating 
+              Council-National Government Center Housing Committee (HUDCC-NGCHC),
+              a government entity created by Executive Order No. 90 and with expanded
+              functions under RA 7279 and Home Insurance And Guaranty Corporation 
+              (HIGC) as Assignor, a government owned and controlled corporation created
+              under RA 580 and presently located at Don Fabian Street, Barangay 
+              Commonwealth, Quezon City. Thru the concerted efforts of 
+              Dr. Ofelia M. Carague, PUP Executive Vice President and Mr. Jaime E. Varela,
+              Project Administrator, NGCHP, a Deed of Assignment was executed and signed 
+              by Atty. Dionisio C. Dela Serna, HUDCC-NGCHC Chairman, MR. Wilfredo F. Hernandez,
+              HIGC President and DR. Zenaida A. Olonan, University President on 24 March 1997
+              with a sole objective to “establish a branch or an extension of 
+              PUP at the National Government Center with a mandate to bring quality
+              education and subsidized tuition fees to the urban poor communities
+              of Quezon City, with priority given to those from the NGCHP.”</p>
+          <p>Prior to this, an execution of Deed of Donation, whereby two (2) 
+              halls - Rothlehner and Misereor Building today in honor to their
+              generosity and benevolence as funding-donors in which the two buildings
+              were built - were donated to PUP for its purposes entered into by
+              and between the Sentro sa Ikauunlad ng Kasanayan at Hanapbuhay (SIKHAY)
+              an association duly registered with the Securities and Exchange 
+              Commission (SEC) represented by its President, Rev. Fr. Joel E. 
+              Tabora, S.J. and PUP on 26 February 1997.</p>
+            <p>Upon its opening in 1997 offering a Master in Educational Management
+              under the Open University System, PUP Quezon City also offered Bachelor
+              of Science in Information Technology and a 1-Year Certificate in 
+              Information Communication Technology on its first year of formal 
+              operations during the Academic Year 1998-1999. As part of the donated
+              property, the two original structures known as Rothlehner and Misereor
+              Halls today became integral parts of the campus and now served as 
+              classrooms, Learning Resource Center, and academic and administrative
+              offices for students and faculty members.</p>
+            <p>On July 29, 1997, PUP Quezon City was officially established during 
+              its formal launching on the very same grounds with the special presence
+              of Mr. Rothlehner who himself was awarded the Plaque of Recognition by
+              PUP President, Dr. Zenaida A. Olonan, together with other honored 
+              guests from the Local Government of Quezon City and PUP administration.</p>
+            <p>The PUP Quezon City Campus presently has a total of four buildings 
+              which include the newly constructed Academic Building with 12 classrooms
+              and another one that houses the Audio-Visual Room and Computer Laboratory.
+              In addition, an Ecumenical Chapel that can be converted to a mini hall 
+              and the Winnie Castelo Welfare Complex, a covered court that cater to 
+              the nonacademic needs of the students.</p>
+            <p>Considered as a miniature of the PUP Main Campus in its design, this 
+              “Green Campus” is a viable option for the Iskolar ng Bayan coming from
+              northeast of Metro Manila and as far as Rizal and Bulacan as a haven 
+              for their search for knowledge. And to seal its official existence as
+              an affirmation of the University’s commitment to democratize access 
+              to educational opportunities for economically challenged students of
+              society, Republic Act 11347, otherwise known as the “PUP Quezon City
+              Campus Act” was signed into law on June 25, 2019. This was made 
+              possible by the 17th Congress House Bill No. 7734 through the 
+              sponsorship of the 2nd District of Quezon City Representative, 
+              Honorable Winston “Winnie” T. Castelo in the House of Representatives
+              as well as the Chair of Committee on Education, Arts and Culture,
+              Honorable Francis “Chiz” G. Escudero from the Senate.</p>
+            <p>Started as petitions to have a higher educational institution for 
+              the youth at the National Government Center area from the community
+              organizations and church groups, namely; Parokya ng Mabuting Pastol
+              (PMP), Kaagapay sa Makatarungan at Pantay na Paninirahan, Inc. 
+              (KAMPI), SUPERBLOCKS, and Kristong Hari Foundation (KHF), and negotiations
+              with local officials and other government agencies, the PUP Quezon City
+              is a pantheon of concrete success towards the struggle in people's
+              fight against ignorance. The campus will continue its passion and
+              commitment to “provide quality education to the urban poor communities
+              of Quezon City and its neighboring localities.”</p>
+        </h1>
+
+      </div>  
+
+      <div class="button"><a href="index.html">Go Back to Home</a></div>
+      
+    </div>  
+    
+
+  </body>
+    
+    
+  <footer>
+
+    <div class="details2">
+         <div class="container2">
+           <h1>CONTACT US
+             <h2>Phone: <b>(+63 2) 5335-1PUP (5335-1787) or 5335-1777</b></h2>
+             <h2>Email: <b>inquire@pup.edu.ph</b></h2>
+             <h2>Facebook Pages:</h2>
+               <ul>
+                 <li><a href="https://www.facebook.com/ThePUPQCBranchOfficial">PUPQC Branch Official</a></li>
+                 <li><a href="https://www.facebook.com/groups/303222520571343">Student Services Announcements</a></li>
+               </ul>
+           </h1>
+
+         </div>
+
+         <div class="container2">
+           <h1>REFERENCES
+               <ul class="references">
+                  <li><a href="https://www.pup.edu.ph/quezoncity/">https://www.pup.edu.ph/quezoncity/</a></li>
+                  <li><a href="https://www.pup.edu.ph/about/">https://www.pup.edu.ph/about/</a></li>
+                  <li><a href="https://ph53202-pup-commonwealth-campus-in-quezon-city.contact.page/">https://ph53202-pup-commonwealth-campus-in-quezon-city.contact.page/</a></li>
+               </ul>
+
+
+           </h1>
+              
+         </div>
+
+    </div>
+ 
+
+    <h5>@ A mocked-up website of PUPQC Branch made by Hermione B. Benitez from BSIT 1-2 @
+    <br>No Copyright Intended. For Academic Purposes Only.</h5>
+
+  </footer>
+    
+    
+    
+    
+</html>
